@@ -1,0 +1,814 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>JS规范 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../CSS/Common_Standard.html" />
+    
+    
+    <link rel="prev" href="JS_Standard.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Name_Standard.html">
+            
+                <a href="Name_Standard.html">
+            
+                    
+                    命名规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Name_Standard.html">
+            
+                <a href="Name_Standard.html">
+            
+                    
+                    命名规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="JS_Standard.html">
+            
+                <a href="JS_Standard.html">
+            
+                    
+                    JS代码规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="codeStyle.html">
+            
+                <a href="codeStyle.html">
+            
+                    
+                    JS规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../CSS/Common_Standard.html">
+            
+                <a href="../CSS/Common_Standard.html">
+            
+                    
+                    CSS代码规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../CSS/CSS_Standard.html">
+            
+                <a href="../CSS/CSS_Standard.html">
+            
+                    
+                    css规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../HTML/HTML.html">
+            
+                <a href="../HTML/HTML.html">
+            
+                    
+                    HTML代码规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../HTML/HTML_Standard.html">
+            
+                <a href="../HTML/HTML_Standard.html">
+            
+                    
+                    HTML代码规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Direction/Direction.html">
+            
+                <a href="../Direction/Direction.html">
+            
+                    
+                    字典
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >JS规范</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B2C;&#x4E00;&#x8282;-&#x4E66;&#x5199;&#x89C4;&#x8303;">&#x7B2C;&#x4E00;&#x8282; &#x4E66;&#x5199;&#x89C4;&#x8303;</h1>
+<ol>
+<li><a style="font-size:24px;" href="#suojin">&#x7F29;&#x8FDB;</a></li>
+<li><a style="font-size:24px;" href="#danhang">&#x5355;&#x884C;&#x957F;&#x5EA6;</a></li>
+<li><a style="font-size:24px;" href="#fenhao">&#x5206;&#x53F7;</a></li>
+<li><a style="font-size:24px;" href="#kongge">&#x7A7A;&#x683C;</a></li>
+<li><a style="font-size:24px;" href="#huanhang">&#x7A7A;&#x884C;</a></li>
+<li><a style="font-size:24px;" href="#danhangzhushi">&#x5355;&#x884C;&#x6CE8;&#x91CA;</a></li>
+<li><a style="font-size:24px;" href="#duohangzhushi">&#x591A;&#x884C;&#x6CE8;&#x91CA;</a></li>
+<li><a style="font-size:24px;" href="#wendangzhushi">&#x6587;&#x6863;&#x6CE8;&#x91CA;</a></li>
+<li><a style="font-size:24px;" href="#yinhao">&#x5F15;&#x53F7;</a></li>
+<li><a style="font-size:24px;" href="#bianliangmingming">&#x53D8;&#x91CF;&#x547D;&#x540D;</a></li>
+<li><a style="font-size:24px;" href="#bianliangshengming">&#x53D8;&#x91CF;&#x58F0;&#x660E;</a></li>
+<li><a style="font-size:24px;" href="#hanshu">&#x51FD;&#x6570;</a></li>
+<li><a style="font-size:24px;" href="#shuzu">&#x6570;&#x7EC4;&#x3001;&#x5BF9;&#x8C61;</a></li>
+<li><a style="font-size:24px;" href="#null">null</a></li>
+<li><a style="font-size:24px;" href="#undefined">undefined</a></li>
+<li><a style="font-size:24px;" href="#zaxiang">&#x6742;&#x9879;</a></li>
+</ol>
+
+<div class="section" id="suojin">
+    <div class="col">
+        <h3 id="&#x7F29;&#x8FDB;">&#x7F29;&#x8FDB;</h3>
+        <p>&#x4F7F;&#x7528;soft tab&#xFF08;4&#x4E2A;&#x7A7A;&#x683C;&#xFF09;&#x3002;</p>
+    </div>
+    <div class="col">
+        <div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="hljs-keyword">var</span> x = <span class="hljs-number">1</span>,
+    y = <span class="hljs-number">1</span>;
+
+<span class="hljs-keyword">if</span> (x &lt; y) {
+    x += <span class="hljs-number">10</span>;
+} <span class="hljs-keyword">else</span> {
+    x += <span class="hljs-number">1</span>;
+}</code></pre></div>
+    </div>
+</div>
+
+<div class="section" id="danhang">
+    <div class="col">
+        <h3 id="&#x5355;&#x884C;&#x957F;&#x5EA6;">&#x5355;&#x884C;&#x957F;&#x5EA6;</h3>
+        <p>&#x4E0D;&#x8981;&#x8D85;&#x8FC7;80&#xFF0C;&#x4F46;&#x5982;&#x679C;&#x7F16;&#x8F91;&#x5668;&#x5F00;&#x542F;word wrap&#x53EF;&#x4EE5;&#x4E0D;&#x8003;&#x8651;&#x5355;&#x884C;&#x957F;&#x5EA6;&#x3002;</p>
+    </div>
+</div>
+
+<div class="section" id="fenhao">
+    <div class="col">
+        <h3 id="&#x5206;&#x53F7;">&#x5206;&#x53F7;</h3>
+        <p>&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#x60C5;&#x51B5;&#x540E;&#x9700;&#x52A0;&#x5206;&#x53F7;&#xFF1A;</p>
+        <ul>
+            <li>&#x53D8;&#x91CF;&#x58F0;&#x660E;</li>
+            <li>&#x8868;&#x8FBE;&#x5F0F;</li>
+            <li>return</li>
+            <li>throw</li>
+            <li>break</li>
+            <li>continue</li>
+            <li>do-while</li>
+        </ul>
+    </div>
+    <div class="col">
+        <div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="hljs-comment">/* var declaration */</span>
+<span class="hljs-keyword">var</span> x = <span class="hljs-number">1</span>;
+
+<span class="hljs-comment">/* expression statement */</span>
+x++;
+
+<span class="hljs-comment">/* do-while */</span>
+<span class="hljs-keyword">do</span> {
+    x++;
+} <span class="hljs-keyword">while</span> (x &lt; <span class="hljs-number">10</span>);</code></pre></div>
+    </div>
+</div>
+
+<div class="section" id="kongge">
+    <div class="col">
+        <h3 id="&#x7A7A;&#x683C;">&#x7A7A;&#x683C;</h3>
+        <p>&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#x60C5;&#x51B5;&#x4E0D;&#x9700;&#x8981;&#x7A7A;&#x683C;&#xFF1A;</p>
+        <ul>
+            <li>&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x540D;&#x540E;</li>
+            <li>&#x524D;&#x7F00;&#x4E00;&#x5143;&#x8FD0;&#x7B97;&#x7B26;&#x540E;</li>
+            <li>&#x540E;&#x7F00;&#x4E00;&#x5143;&#x8FD0;&#x7B97;&#x7B26;&#x524D;</li>
+            <li>&#x51FD;&#x6570;&#x8C03;&#x7528;&#x62EC;&#x53F7;&#x524D;</li>
+            <li>&#x65E0;&#x8BBA;&#x662F;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x8FD8;&#x662F;&#x51FD;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&apos;(&apos;&#x524D;&#x4E0D;&#x8981;&#x7A7A;&#x683C;</li>
+            <li>&#x6570;&#x7EC4;&#x7684;&apos;[&apos;&#x540E;&#x548C;&apos;]&apos;&#x524D;</li>
+            <li>&#x5BF9;&#x8C61;&#x7684;&apos;{&apos;&#x540E;&#x548C;&apos;}&apos;&#x524D;</li>
+            <li>&#x8FD0;&#x7B97;&#x7B26;&apos;(&apos;&#x540E;&#x548C;&apos;)&apos;&#x524D;</li>
+        </ul>
+        <p>&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#x60C5;&#x51B5;&#x9700;&#x8981;&#x7A7A;&#x683C;&#xFF1A;</p>
+        <ul>
+            <li>&#x4E8C;&#x5143;&#x8FD0;&#x7B97;&#x7B26;&#x524D;&#x540E;</li>
+            <li>&#x4E09;&#x5143;&#x8FD0;&#x7B97;&#x7B26;&apos;?:&apos;&#x524D;&#x540E;</li>
+            <li>&#x4EE3;&#x7801;&#x5757;&apos;{&apos;&#x524D;</li>
+            <li>&#x4E0B;&#x5217;&#x5173;&#x952E;&#x5B57;&#x524D;&#xFF1A;<code>else</code>, <code>while</code>, <code>catch</code>, <code>finally</code></li>
+            <li>&#x4E0B;&#x5217;&#x5173;&#x952E;&#x5B57;&#x540E;&#xFF1A;<code>if</code>, <code>else</code>, <code>for</code>, <code>while</code>, <code>do</code>, <code>switch</code>, <code>case</code>, <code>try</code>, <code>catch</code>, <code>finally</code>, <code>with</code>, <code>return</code>, <code>typeof</code></li>
+            <li>&#x5355;&#x884C;&#x6CE8;&#x91CA;&apos;//&apos;&#x540E;&#xFF08;&#x82E5;&#x5355;&#x884C;&#x6CE8;&#x91CA;&#x548C;&#x4EE3;&#x7801;&#x540C;&#x884C;&#xFF0C;&#x5219;&apos;//&apos;&#x524D;&#x4E5F;&#x9700;&#x8981;&#xFF09;&#xFF0C;&#x591A;&#x884C;&#x6CE8;&#x91CA;&apos;*&apos;&#x540E;</li>
+            <li>&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x503C;&#x524D;</li>
+            <li>for&#x5FAA;&#x73AF;&#xFF0C;&#x5206;&#x53F7;&#x540E;&#x7559;&#x6709;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;&#xFF0C;&#x524D;&#x7F6E;&#x6761;&#x4EF6;&#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A;&#xFF0C;&#x9017;&#x53F7;&#x540E;&#x7559;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;</li>
+            <li>&#x65E0;&#x8BBA;&#x662F;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x8FD8;&#x662F;&#x51FD;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&apos;{&apos;&#x524D;&#x4E00;&#x5B9A;&#x8981;&#x6709;&#x7A7A;&#x683C;</li>
+            <li>&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x4E4B;&#x95F4;</li>
+        </ul>
+    </div>
+    <div class="col">
+        <div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="hljs-comment">// not good</span>
+<span class="hljs-keyword">var</span> a = {
+    b :<span class="hljs-number">1</span>
+};
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">var</span> a = {
+    b: <span class="hljs-number">1</span>
+};
+
+<span class="hljs-comment">// not good</span>
+++ x;
+y ++;
+z = x?<span class="hljs-number">1</span>:<span class="hljs-number">2</span>;
+
+<span class="hljs-comment">// good</span>
+++x;
+y++;
+z = x ? <span class="hljs-number">1</span> : <span class="hljs-number">2</span>;
+
+<span class="hljs-comment">// not good</span>
+<span class="hljs-keyword">var</span> a = [ <span class="hljs-number">1</span>, <span class="hljs-number">2</span> ];
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">var</span> a = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>];
+
+<span class="hljs-comment">// not good</span>
+<span class="hljs-keyword">var</span> a = ( <span class="hljs-number">1</span>+<span class="hljs-number">2</span> )*<span class="hljs-number">3</span>;
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">var</span> a = (<span class="hljs-number">1</span> + <span class="hljs-number">2</span>) * <span class="hljs-number">3</span>;
+
+<span class="hljs-comment">// no space before &apos;(&apos;, one space before &apos;{&apos;, one space between function parameters</span>
+<span class="hljs-keyword">var</span> doSomething = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">a, b, c</span>) </span>{
+    <span class="hljs-comment">// do something</span>
+};
+
+<span class="hljs-comment">// no space before &apos;(&apos;</span>
+doSomething(item);
+
+<span class="hljs-comment">// not good</span>
+<span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">6</span>;i++){
+    x++;
+}
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">6</span>; i++) {
+    x++;
+}</code></pre></div>
+    </div>
+</div>
+
+
+
+<div class="section" id="huanhang">
+    <div class="col">
+        <h3 id="&#x7A7A;&#x884C;">&#x7A7A;&#x884C;</h3>
+        <p>&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#x60C5;&#x51B5;&#x9700;&#x8981;&#x7A7A;&#x884C;&#xFF1A;</p>
+        <ul>
+            <li>&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x540E;&#xFF08;&#x5F53;&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x5728;&#x4EE3;&#x7801;&#x5757;&#x7684;&#x6700;&#x540E;&#x4E00;&#x884C;&#x65F6;&#xFF0C;&#x5219;&#x65E0;&#x9700;&#x7A7A;&#x884C;&#xFF09;</li>
+            <li>&#x6CE8;&#x91CA;&#x524D;&#xFF08;&#x5F53;&#x6CE8;&#x91CA;&#x5728;&#x4EE3;&#x7801;&#x5757;&#x7684;&#x7B2C;&#x4E00;&#x884C;&#x65F6;&#xFF0C;&#x5219;&#x65E0;&#x9700;&#x7A7A;&#x884C;&#xFF09;</li>
+            <li>&#x4EE3;&#x7801;&#x5757;&#x540E;&#xFF08;&#x5728;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x3001;&#x6570;&#x7EC4;&#x3001;&#x5BF9;&#x8C61;&#x4E2D;&#x5219;&#x65E0;&#x9700;&#x7A7A;&#x884C;&#xFF09;</li>
+            <li>&#x6587;&#x4EF6;&#x6700;&#x540E;&#x4FDD;&#x7559;&#x4E00;&#x4E2A;&#x7A7A;&#x884C;</li>
+        </ul>
+    </div>
+    <div class="col">
+        <div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="hljs-comment">// need blank line after variable declaration</span>
+<span class="hljs-keyword">var</span> x = <span class="hljs-number">1</span>;
+
+<span class="hljs-comment">// not need blank line when variable declaration is last expression in the current block</span>
+<span class="hljs-keyword">if</span> (x &gt;= <span class="hljs-number">1</span>) {
+    <span class="hljs-keyword">var</span> y = x + <span class="hljs-number">1</span>;
+}
+
+<span class="hljs-keyword">var</span> a = <span class="hljs-number">2</span>;
+
+<span class="hljs-comment">// need blank line before line comment</span>
+a++;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">b</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// not need blank line when comment is first line of block</span>
+    <span class="hljs-keyword">return</span> a;
+}
+
+<span class="hljs-comment">// need blank line after blocks</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">2</span>; i++) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>) {
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+    }
+
+    <span class="hljs-keyword">continue</span>;
+}
+
+<span class="hljs-keyword">var</span> obj = {
+    foo: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+    },
+
+    bar: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-number">2</span>;
+    }
+};
+
+<span class="hljs-comment">// not need blank line when in argument list, array, object</span>
+func(
+    <span class="hljs-number">2</span>,
+    <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        a++;
+    },
+    <span class="hljs-number">3</span>
+);
+
+<span class="hljs-keyword">var</span> foo = [
+    <span class="hljs-number">2</span>,
+    <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        a++;
+    },
+    <span class="hljs-number">3</span>
+];
+
+
+<span class="hljs-keyword">var</span> foo = {
+    a: <span class="hljs-number">2</span>,
+    b: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        a++;
+    },
+    c: <span class="hljs-number">3</span>
+};</code></pre></div>
+    </div>
+</div>
+
+
+
+
+<div class="section" id="js-new-line">
+    <div class="col">
+        <h3 id="&#x6362;&#x884C;">&#x6362;&#x884C;</h3>
+        <p>&#x6362;&#x884C;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x884C;&#x672B;&#x5FC5;&#x987B;&#x6709;&apos;,&apos;&#x6216;&#x8005;&#x8FD0;&#x7B97;&#x7B26;&#xFF1B;</p>
+        <p>&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#x60C5;&#x51B5;&#x4E0D;&#x9700;&#x8981;&#x6362;&#x884C;&#xFF1A;</p>
+        <ul>
+            <li>&#x4E0B;&#x5217;&#x5173;&#x952E;&#x5B57;&#x540E;&#xFF1A;<code>else</code>, <code>catch</code>, <code>finally</code></li>
+            <li>&#x4EE3;&#x7801;&#x5757;&apos;{&apos;&#x524D;</li>
+        </ul>
+        <p>&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#x60C5;&#x51B5;&#x9700;&#x8981;&#x6362;&#x884C;&#xFF1A;</p>
+        <ul>
+            <li>&#x4EE3;&#x7801;&#x5757;&apos;{&apos;&#x540E;&#x548C;&apos;}&apos;&#x524D;</li>
+            <li>&#x53D8;&#x91CF;&#x8D4B;&#x503C;&#x540E;</li>
+        </ul>
+    </div>
+    <div class="col">
+        <div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="hljs-comment">// not good</span>
+<span class="hljs-keyword">var</span> a = {
+    b: <span class="hljs-number">1</span>
+    , c: <span class="hljs-number">2</span>
+};
+
+x = y
+    ? <span class="hljs-number">1</span> : <span class="hljs-number">2</span>;
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">var</span> a = {
+    b: <span class="hljs-number">1</span>,
+    c: <span class="hljs-number">2</span>
+};
+
+x = y ? <span class="hljs-number">1</span> : <span class="hljs-number">2</span>;
+x = y ?
+    <span class="hljs-number">1</span> : <span class="hljs-number">2</span>;
+
+<span class="hljs-comment">// no need line break with &apos;else&apos;, &apos;catch&apos;, &apos;finally&apos;</span>
+<span class="hljs-keyword">if</span> (condition) {
+    ...
+} <span class="hljs-keyword">else</span> {
+    ...
+}
+
+<span class="hljs-keyword">try</span> {
+    ...
+} <span class="hljs-keyword">catch</span> (e) {
+    ...
+} <span class="hljs-keyword">finally</span> {
+    ...
+}
+
+<span class="hljs-comment">// not good</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span>(<span class="hljs-params"></span>)
+</span>{
+    ...
+}
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span>(<span class="hljs-params"></span>) </span>{
+    ...
+}
+
+<span class="hljs-comment">// not good</span>
+<span class="hljs-keyword">var</span> a, foo = <span class="hljs-number">7</span>, b,
+    c, bar = <span class="hljs-number">8</span>;
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">var</span> a,
+    foo = <span class="hljs-number">7</span>,
+    b, c, bar = <span class="hljs-number">8</span>;</code></pre></div>
+    </div>
+</div>
+
+<div class="section" id="danhangzhushi">
+    <div class="col">
+        <h3 id="&#x5355;&#x884C;&#x6CE8;&#x91CA;">&#x5355;&#x884C;&#x6CE8;&#x91CA;</h3>
+        <p>&#x53CC;&#x659C;&#x7EBF;&#x540E;&#xFF0C;&#x5FC5;&#x987B;&#x8DDF;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;&#xFF1B;</p>
+        <p>&#x7F29;&#x8FDB;&#x4E0E;&#x4E0B;&#x4E00;&#x884C;&#x4EE3;&#x7801;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#xFF1B;</p>
+        <p>&#x53EF;&#x4F4D;&#x4E8E;&#x4E00;&#x4E2A;&#x4EE3;&#x7801;&#x884C;&#x7684;&#x672B;&#x5C3E;&#xFF0C;&#x4E0E;&#x4EE3;&#x7801;&#x95F4;&#x9694;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;&#x3002;
+    </p></div>
+    <div class="col">
+        <div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="hljs-keyword">if</span> (condition) {
+    <span class="hljs-comment">// if you made it here, then all security checks passed</span>
+    allowed();
+}
+
+<span class="hljs-keyword">var</span> zhangsan = <span class="hljs-string">&apos;zhangsan&apos;</span>; <span class="hljs-comment">// one space after code</span></code></pre></div>
+    </div>
+</div>
+
+<div class="section" id="duohangzhushi">
+    <div class="col">
+        <h3 id="&#x591A;&#x884C;&#x6CE8;&#x91CA;">&#x591A;&#x884C;&#x6CE8;&#x91CA;</h3>
+        <p>&#x6700;&#x5C11;&#x4E09;&#x884C;, &apos;*&apos;&#x540E;&#x8DDF;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;&#xFF0C;&#x5177;&#x4F53;&#x53C2;&#x7167;&#x53F3;&#x8FB9;&#x7684;&#x5199;&#x6CD5;&#xFF1B;</p>
+        <p>&#x5EFA;&#x8BAE;&#x5728;&#x4EE5;&#x4E0B;&#x60C5;&#x51B5;&#x4E0B;&#x4F7F;&#x7528;&#xFF1A;
+        </p><ul>
+            <li>&#x96BE;&#x4E8E;&#x7406;&#x89E3;&#x7684;&#x4EE3;&#x7801;&#x6BB5;</li>
+            <li>&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x9519;&#x8BEF;&#x7684;&#x4EE3;&#x7801;&#x6BB5;</li>
+            <li>&#x6D4F;&#x89C8;&#x5668;&#x7279;&#x6B8A;&#x7684;HACK&#x4EE3;&#x7801;</li>
+            <li>&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x5F3A;&#x76F8;&#x5173;&#x7684;&#x4EE3;&#x7801;</li>
+        </ul>
+    </div>
+    <div class="col">
+        <div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="hljs-comment">/*
+ * one space after &apos;*&apos;
+ */</span>
+<span class="hljs-keyword">var</span> x = <span class="hljs-number">1</span>;</code></pre></div>
+    </div>
+</div>
+
+
+
+<div class="section" id="wendangzhushi">
+    <div class="col">
+        <h3 id="&#x6587;&#x6863;&#x6CE8;&#x91CA;">&#x6587;&#x6863;&#x6CE8;&#x91CA;</h3>
+        <p>&#x5404;&#x7C7B;&#x6807;&#x7B7E;@param, @method&#x7B49;&#x8BF7;&#x53C2;&#x8003;<a href="http://usejsdoc.org/" target="_blank">usejsdoc</a>&#x548C;<a href="http://yuri4ever.github.io/jsdoc/" target="_blank">JSDoc Guide</a>&#xFF1B;</p>
+        <p>&#x5EFA;&#x8BAE;&#x5728;&#x4EE5;&#x4E0B;&#x60C5;&#x51B5;&#x4E0B;&#x4F7F;&#x7528;&#xFF1A;</p>
+        <ul>
+            <li>&#x6240;&#x6709;&#x5E38;&#x91CF;</li>
+            <li>&#x6240;&#x6709;&#x51FD;&#x6570;</li>
+            <li>&#x6240;&#x6709;&#x7C7B;</li>
+        </ul>
+    </div>
+    <div class="col">
+        <div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="hljs-comment">/**
+ * @func
+ * @desc &#x4E00;&#x4E2A;&#x5E26;&#x53C2;&#x6570;&#x7684;&#x51FD;&#x6570;
+ * @param {string} a - &#x53C2;&#x6570;a
+ * @param {number} b=1 - &#x53C2;&#x6570;b&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;1
+ * @param {string} c=1 - &#x53C2;&#x6570;c&#x6709;&#x4E24;&#x79CD;&#x652F;&#x6301;&#x7684;&#x53D6;&#x503C;&lt;/br&gt;1&#x2014;&#x8868;&#x793A;x&lt;/br&gt;2&#x2014;&#x8868;&#x793A;xx
+ * @param {object} d - &#x53C2;&#x6570;d&#x4E3A;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;
+ * @param {string} d.e - &#x53C2;&#x6570;d&#x7684;e&#x5C5E;&#x6027;
+ * @param {string} d.f - &#x53C2;&#x6570;d&#x7684;f&#x5C5E;&#x6027;
+ * @param {object[]} g - &#x53C2;&#x6570;g&#x4E3A;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x6570;&#x7EC4;
+ * @param {string} g.h - &#x53C2;&#x6570;g&#x6570;&#x7EC4;&#x4E2D;&#x4E00;&#x9879;&#x7684;h&#x5C5E;&#x6027;
+ * @param {string} g.i - &#x53C2;&#x6570;g&#x6570;&#x7EC4;&#x4E2D;&#x4E00;&#x9879;&#x7684;i&#x5C5E;&#x6027;
+ * @param {string} [j] - &#x53C2;&#x6570;j&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x53C2;&#x6570;
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params">a, b, c, d, g, j</span>) </span>{
+    ...
+}</code></pre></div>
+    </div>
+</div>
+
+
+
+<div id="undefined" style="border-bottom: 1px solid #dfe1e8;Float:left ">  
+    <div class="col">
+        <h3 id="undefined">undefined</h3>
+        <p>&#x6C38;&#x8FDC;&#x4E0D;&#x8981;&#x76F4;&#x63A5;&#x4F7F;&#x7528;undefined&#x8FDB;&#x884C;&#x53D8;&#x91CF;&#x5224;&#x65AD;&#xFF1B;</p>
+        <p>&#x4F7F;&#x7528;typeof&#x548C;&#x5B57;&#x7B26;&#x4E32;&apos;undefined&apos;&#x5BF9;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x5224;&#x65AD;&#x3002;</p>
+    </div>
+    <div class="col">
+        <div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="hljs-comment">// not good</span>
+        <span class="hljs-keyword">if</span> (person === <span class="hljs-literal">undefined</span>) {
+        ...
+        }
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> person === <span class="hljs-string">&apos;undefined&apos;</span>) {
+    ...
+}</code></pre></div>
+    </div>
+    </div>
+
+<div id="zaxiang" style="border-bottom: 1px solid #dfe1e8;Float:left ">      
+    <div class="col">
+        <h3 id="&#x6742;&#x9879;">&#x6742;&#x9879;</h3>
+        <p>&#x4E0D;&#x8981;&#x6DF7;&#x7528;tab&#x548C;space&#xFF1B;</p>
+        <p>&#x4E0D;&#x8981;&#x5728;&#x4E00;&#x5904;&#x4F7F;&#x7528;&#x591A;&#x4E2A;tab&#x6216;space&#xFF1B;</p>
+        <p>&#x6362;&#x884C;&#x7B26;&#x7EDF;&#x4E00;&#x7528;&apos;LF&apos;&#xFF1B;</p>
+        <p>&#x5BF9;&#x4E0A;&#x4E0B;&#x6587;this&#x7684;&#x5F15;&#x7528;&#x53EA;&#x80FD;&#x4F7F;&#x7528;&apos;_this&apos;, &apos;that&apos;, &apos;self&apos;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x6765;&#x547D;&#x540D;&#xFF1B;</p>
+        <p>&#x884C;&#x5C3E;&#x4E0D;&#x8981;&#x6709;&#x7A7A;&#x767D;&#x5B57;&#x7B26;&#xFF1B;</p>
+        <p>switch&#x7684;falling through&#x548C;no default&#x7684;&#x60C5;&#x51B5;&#x4E00;&#x5B9A;&#x8981;&#x6709;&#x6CE8;&#x91CA;&#x7279;&#x522B;&#x8BF4;&#x660E;&#xFF1B;</p>
+        <p>&#x4E0D;&#x5141;&#x8BB8;&#x6709;&#x7A7A;&#x7684;&#x4EE3;&#x7801;&#x5757;&#x3002;</p>
+    </div>
+    <div class="highlight">
+        <pre><code class="language-javascript" data-lang="javascript"><span class="hljs-comment">// not good</span>
+        <span class="hljs-keyword">var</span> a   = <span class="hljs-number">1</span>;
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Person</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-comment">// not good</span>
+        <span class="hljs-keyword">var</span> me = <span class="hljs-keyword">this</span>;
+        <span class="hljs-comment">// good</span>
+        <span class="hljs-keyword">var</span> _this = <span class="hljs-keyword">this</span>;
+        <span class="hljs-comment">// good</span>
+        <span class="hljs-keyword">var</span> that = <span class="hljs-keyword">this</span>;
+        <span class="hljs-comment">// good</span>
+        <span class="hljs-keyword">var</span> self = <span class="hljs-keyword">this</span>;
+        }
+        <span class="hljs-comment">// good</span>
+        <span class="hljs-keyword">switch</span> (condition) {
+        <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>:
+        <span class="hljs-keyword">case</span> <span class="hljs-number">2</span>:
+        ...
+        break;
+        <span class="hljs-keyword">case</span> <span class="hljs-number">3</span>:
+        ...
+        <span class="hljs-comment">// why fall through</span>
+        <span class="hljs-keyword">case</span> <span class="hljs-number">4</span>
+        ...
+        break;
+        <span class="hljs-comment">// why no default</span>
+        }
+
+        <span class="hljs-comment">// not good with empty block</span>
+        <span class="hljs-keyword">if</span> (condition) {
+        }</code></pre>
+    </div>
+</div>
+
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="JS_Standard.html" class="navigation navigation-prev " aria-label="Previous page: JS代码规范">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../CSS/Common_Standard.html" class="navigation navigation-next " aria-label="Next page: CSS代码规范">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"JS规范","level":"1.3.1","depth":2,"next":{"title":"CSS代码规范","level":"1.4","depth":1,"path":"CSS/Common_Standard.md","ref":"CSS/Common_Standard.md","articles":[{"title":"css规范","level":"1.4.1","depth":2,"path":"CSS/CSS_Standard.md","ref":"CSS/CSS_Standard.md","articles":[]}]},"previous":{"title":"JS代码规范","level":"1.3","depth":1,"path":"JS/JS_Standard.md","ref":"JS/JS_Standard.md","articles":[{"title":"JS规范","level":"1.3.1","depth":2,"path":"JS/codeStyle.md","ref":"JS/codeStyle.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"JS/codeStyle.md","mtime":"2018-07-16T15:10:09.437Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-17T13:20:49.806Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
